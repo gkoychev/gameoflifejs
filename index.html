@@ -5,8 +5,26 @@
     <title>Game of Life</title>
 </head>
 <body>
-    <canvas id="life" width="1512" height="1512"></canvas>
+    <canvas id="life" width="500" height="500"></canvas>
 
-    <script type="application/javascript" src="mylife.js"></script>
+    <!--<script type="application/javascript" src="oldlife.js"></script>-->
+
+    <script type="application/javascript" src="js/cell.js"></script>
+    <script type="application/javascript" src="js/grid.js"></script>
+    <script type="application/javascript" src="js/life.js"></script>
+    <script>
+
+        //run it
+        new Life({
+            canvasId: 'life',
+            cellSize: 10,
+            initialPoints: [
+                // Gosper glider gun
+                [1, 5],[1, 6],[2, 5],[2, 6],[11, 5],[11, 6],[11, 7],[12, 4],[12, 8],[13, 3],[13, 9],[14, 3],[14, 9],[15, 6],[16, 4],[16, 8],[17, 5],[17, 6],[17, 7],[18, 6],[21, 3],[21, 4],[21, 5],[22, 3],[22, 4],[22, 5],[23, 2],[23, 6],[25, 1],[25, 2],[25, 6],[25, 7],[35, 3],[35, 4],[36, 3],[36, 4]
+            ]
+
+        }).run();
+
+    </script>
 </body>
 </html>

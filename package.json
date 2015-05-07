@@ -1,0 +1,16 @@
+{
+  "name": "gameoflifejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "life.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gkoychev/gameoflifejs.git"
+  },
+  "dependencies": {
+    "mocha": "^2.2.4"
+  }
+}
